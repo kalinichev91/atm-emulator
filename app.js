@@ -30,7 +30,7 @@ while (true) {
             case '2':
             alert(`Ваш баланс: ${balance} `);
             break;
-        case '2':
+        case '3':
             const accountToDeposit = Number(prompt('Введите сумму для снятия'));
             if (isNaN(accountToDeposit) || accountToDeposit <=0) {
                 alert('Ошибка: введена неккоректная сумма.');
@@ -40,6 +40,12 @@ while (true) {
                 alert(`Счет пополнен. Ваш баланс: ${balance} `);
                 break;
             }
+            case '4':
+                isRunning = false;
+                alert('Спасибо за использование банкомата');
+                break;
+            default:
+                alert('Ошибка: выбран неверный пункт меню.');    
 
     }
      
